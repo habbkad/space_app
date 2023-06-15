@@ -1,0 +1,39 @@
+.container {
+  background-image: url("./assets/home/background-home-desktop.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  position: relative;
+  top: 67px;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    background-image: url("./assets/home/background-home-mobile.jpg") !important;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .navbar {
+    visibility: hidden;
+  }
+
+  .explore {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+}

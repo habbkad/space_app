@@ -1,0 +1,35 @@
+.planet_names {
+  display: flex;
+  flex-direction: row;
+}
+
+#planets:focus {
+  border-bottom-width: 2px;
+  border-color: aliceblue;
+  border-radius: 0px;
+}
+#planet_pic {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .planet_names {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #planets:focus {
+    border-bottom-width: 2px;
+    border-color: aliceblue;
+    border-radius: 0px;
+  }
+  #planet_pic {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+}
