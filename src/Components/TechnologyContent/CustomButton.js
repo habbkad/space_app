@@ -15,11 +15,11 @@ const CustomButton = (props) => {
       <Box
         as="button"
         height="70px"
-        w={20}
+        w={"70px"}
         border="1px"
         px="8px"
         m={[2, 0]}
-        borderRadius="50px"
+        borderRadius="70px"
         bg={
           props.active === 1
             ? {
@@ -31,7 +31,7 @@ const CustomButton = (props) => {
         fontWeight="semibold"
         borderColor="#ccd0d5"
         color="white"
-        _active={{
+        _hover={{
           bg: "#dddfe2",
         }}
         _focus={{

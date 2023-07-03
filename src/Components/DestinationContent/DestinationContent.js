@@ -155,7 +155,11 @@ const DestinationContent = () => {
                 colorScheme="teal"
                 variant="gost"
                 id="planets"
+                fontFamily={"BarlowCondensed"}
                 ml={15}
+                fontSize={"16px"}
+                letterSpacing={1}
+                color={"bluey"}
                 onClick={(e) => {
                   setPlanet("Moon");
                 }}
@@ -167,6 +171,10 @@ const DestinationContent = () => {
                 variant="gost"
                 id="planets"
                 ml={15}
+                letterSpacing={1}
+                fontSize={"16px"}
+                fontFamily={"BarlowCondensed"}
+                color={"bluey"}
                 onClick={(e) => {
                   setPlanet("Mars");
                 }}
@@ -179,6 +187,10 @@ const DestinationContent = () => {
                 variant="gost"
                 id="planets"
                 ml={15}
+                fontSize={"16px"}
+                letterSpacing={1}
+                fontFamily={"BarlowCondensed"}
+                color={"bluey"}
                 onClick={(e) => {
                   setPlanet("Europa");
                 }}
@@ -191,6 +203,10 @@ const DestinationContent = () => {
                 variant="gost"
                 id="planets"
                 ml={15}
+                letterSpacing={1}
+                fontSize={"16px"}
+                color={"bluey"}
+                fontFamily={"BarlowCondensed"}
                 onClick={(e) => {
                   setPlanet("Titan");
                 }}

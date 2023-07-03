@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./CrewContent.css";
-import { Box, Center, Flex, Radio, RadioGroup, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Flex,
+  Radio,
+  RadioGroup,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import CrewDetails from "./CrewDetails";
 import CrewPictures from "./CrewPictures";
 import one from "./assets/image-douglas-hurley.png";
@@ -63,12 +71,31 @@ const CrewContent = (props) => {
             justifySelf="center"
           >
             <Box ml={[0, 40]}>
-              <Flex
-                direction={["column-reverse", "column"]}
-                align={["center", "normal"]}
-              >
+              <Flex direction={["column"]} align={["center", "normal"]}>
+                <Flex>
+                  <Text
+                    color={"white"}
+                    letterSpacing={"3px"}
+                    mt={15}
+                    fontSize="28px"
+                    opacity={0.6}
+                    mr={2}
+                  >
+                    02
+                  </Text>
+                  <Text
+                    color={"milky"}
+                    mt={15}
+                    fontSize="28px"
+                    letterSpacing={"3px"}
+                  >
+                    MEET YOUR CREW
+                  </Text>
+                </Flex>
+              </Flex>
+              <Flex direction={["column"]} align={["center", "normal"]}>
                 <CrewDetails details={details} />
-                <Box mt={[15, 10]}>
+                <Box mt={[20, 10]}>
                   <RadioGroup onChange={setRadioBtn} value={radioBtn}>
                     <Stack direction="row" mt={[100, 0]}>
                       <Radio value="1"></Radio>

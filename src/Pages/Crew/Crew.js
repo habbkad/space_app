@@ -21,9 +21,6 @@ const Crew = () => {
         <Navbar activeCrew={{ borderBottom: "2px", borderColor: "#ccd0d5" }} />
       </div>
 
-      <Text color={"white"} mt={15} fontSize="3xl">
-        Meet your crew
-      </Text>
       <CrewContent />
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CustomButton from "./CustomButton";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 const TechnologyDetails = (props) => {
   const [vehicle, setVehicle] = useState("Toyota");
 
@@ -14,9 +14,14 @@ const TechnologyDetails = (props) => {
     if (vehicle == "Toyota") {
       return (
         <Box>
-          <Text fontSize={["4xl", "6xl"]} textAlign={["center", "start"]}>
+          <Heading
+            fontSize={"56px"}
+            textAlign={["center", "start"]}
+            fontWeight={"normal"}
+            mb={10}
+          >
             Launch vehicle
-          </Text>
+          </Heading>
           <Text textAlign={["center", "start"]}>
             A launch vehicle or carrier rocket is a rocket-propelled vehicle
             used to carry a payload from Earth's surface to space, usually to
@@ -29,9 +34,14 @@ const TechnologyDetails = (props) => {
     } else if (vehicle == "Rocket") {
       return (
         <Box>
-          <Text fontSize={["4xl", "6xl"]} textAlign={["center", "start"]}>
+          <Heading
+            fontSize={"56px"}
+            textAlign={["center", "start"]}
+            fontWeight={"normal"}
+            mb={10}
+          >
             Spaceport
-          </Text>
+          </Heading>
           <Text textAlign={["center", "start"]}>
             A spaceport or cosmodrome is a site for launching (or receiving)
             spacecraft, by analogy to the seaport for ships or airport for
@@ -44,9 +54,14 @@ const TechnologyDetails = (props) => {
     } else if (vehicle == "Nav") {
       return (
         <Box>
-          <Text fontSize={["4xl", "6xl"]} textAlign={["center", "start"]}>
+          <Heading
+            fontSize={"56px"}
+            textAlign={["center", "start"]}
+            fontWeight={"normal"}
+            mb={10}
+          >
             Space capsule
-          </Text>
+          </Heading>
           <Text textAlign={["center", "start"]}>
             A space capsule is an often-crewed spacecraft that uses a blunt-body
             reentry capsule to reenter the Earth's atmosphere without wings. Our
@@ -63,9 +78,7 @@ const TechnologyDetails = (props) => {
     <div>
       <Box>
         <Box className="title">
-          <Text mb={[0, 100]} ml={150} color={"white"}>
-            SPACE LAUNCH
-          </Text>
+          <Text mb={[0, 100]} ml={150} color={"white"}></Text>
         </Box>
 
         <Flex direction={["column", "row"]}>
@@ -93,9 +106,15 @@ const TechnologyDetails = (props) => {
               changeVehicle={changeVehicle}
             />
           </Flex>
-          <Box color={"white"} w={["100%", "60%"]} mt={[10, 0]} p={[5, 0]}>
-            <Text color={"white"} textAlign={["center", "start"]}>
-              The technology
+          <Box color={"white"} w={["100%", "60%"]} mt={[10, 0]} p={[2, 0]}>
+            <Text
+              color={"bluey"}
+              letterSpacing={"2px"}
+              textAlign={["center", "start"]}
+              fontSize={"16px"}
+              style={{ fontFamily: "BarlowCondensed" }}
+            >
+              THE TECHNOLOGY
             </Text>
 
             {channgeDetails(vehicle)}

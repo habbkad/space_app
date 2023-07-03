@@ -6,12 +6,13 @@ import { Box, Flex, Container, Center, Circle } from "@chakra-ui/react";
 import { getCrewData } from "../../hooks/getData";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCrew } from "../../Redux/Reducer/reducer";
+import NavbarMobile from "../../Components/Navbar/NavbarMobile";
 
 const Home = () => {
   const dispach = useDispatch();
 
   return (
-    <div className="container">
+    <div className="container-home ">
       <Box>
         <div className="navbar">
           <Navbar

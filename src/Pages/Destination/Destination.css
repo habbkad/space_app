@@ -4,13 +4,14 @@
   width: 100%;
   background-repeat: no-repeat;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .container_destination {
     background-image: url("./assets/destination/background-destination-mobile.jpg");
-    height: 100%;
-    width: 100% !important;
+    height: 160vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
   .nav {
     visibility: hidden;
