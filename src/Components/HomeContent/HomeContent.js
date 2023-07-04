@@ -5,12 +5,31 @@ const HomeContent = () => {
   return (
     <div className="container">
       <div className="text_content">
-        <Text fontSize="5xl"> TO SPACE</Text>
-        <Text textAlign={["center"]}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          voluptates veritatis, mollitia quas vero, magnam voluptatem, tempore
-          sint id similique deserunt reiciendis. Illum, at officia. Dolorum
-          provident debitis magni soluta!
+        <Text
+          fontSize={["26px", "4xl"]}
+          textAlign={["normal", "center"]}
+          color={"bluey"}
+          letterSpacing={["3px", "5px"]}
+          style={{ fontFamily: "BarlowCondensed" }}
+        >
+          {" "}
+          SO, YOU WANT TO TRAVEL TO
+        </Text>
+        <Text
+          fontSize={["100px", "150px"]}
+          textAlign={["normal", "center"]}
+          color={"milky"}
+          letterSpacing={"5px"}
+          style={{ fontFamily: "Bellefair" }}
+        >
+          {" "}
+          SPACE
+        </Text>{" "}
+        <Text color={"bluey"} ml={[0, "16%"]} w={["98%", "60%"]}>
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
         </Text>
       </div>
       <Box className="explore_container">

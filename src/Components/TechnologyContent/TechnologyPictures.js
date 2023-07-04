@@ -11,7 +11,7 @@ const TechnologyPictures = (props) => {
         <Box>
           {" "}
           <Image
-            boxSize={["450PX", "500px"]}
+            boxSize={["450px", "500px"]}
             src={pic}
             alt="Dan Abramov"
             objectFit={["contain"]}

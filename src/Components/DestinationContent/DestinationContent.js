@@ -23,6 +23,10 @@ import { getDestination, getPlanetdata } from "../../hooks/getData";
 const DestinationContent = () => {
   const [planet, setPlanet] = useState("Moon");
   const [data, setData] = useState([]);
+  const [moon, setMoon] = useState(true);
+  const [mars, setMars] = useState(false);
+  const [europa, setEuropa] = useState(false);
+  const [titan, setTitan] = useState(false);
   //holds data for each planet
   let planetDetails = {};
 
@@ -154,14 +158,18 @@ const DestinationContent = () => {
               <Button
                 colorScheme="teal"
                 variant="gost"
-                id="planets"
-                fontFamily={"BarlowCondensed"}
+                id={moon ? "planets" : ""}
+                style={{ fontFamily: "BarlowCondensed" }}
                 ml={15}
                 fontSize={"16px"}
                 letterSpacing={1}
                 color={"bluey"}
                 onClick={(e) => {
                   setPlanet("Moon");
+                  setTitan(false);
+                  setEuropa(false);
+                  setMoon(true);
+                  setMars(false);
                 }}
               >
                 Moon
@@ -169,14 +177,18 @@ const DestinationContent = () => {
               <Button
                 colorScheme="teal"
                 variant="gost"
-                id="planets"
+                id={mars ? "planets" : ""}
                 ml={15}
                 letterSpacing={1}
                 fontSize={"16px"}
-                fontFamily={"BarlowCondensed"}
+                style={{ fontFamily: "BarlowCondensed" }}
                 color={"bluey"}
                 onClick={(e) => {
                   setPlanet("Mars");
+                  setTitan(false);
+                  setEuropa(false);
+                  setMoon(false);
+                  setMars(true);
                 }}
               >
                 {" "}
@@ -185,14 +197,18 @@ const DestinationContent = () => {
               <Button
                 colorScheme="teal"
                 variant="gost"
-                id="planets"
+                id={europa ? "planets" : ""}
                 ml={15}
                 fontSize={"16px"}
                 letterSpacing={1}
-                fontFamily={"BarlowCondensed"}
+                style={{ fontFamily: "BarlowCondensed" }}
                 color={"bluey"}
                 onClick={(e) => {
                   setPlanet("Europa");
+                  setTitan(false);
+                  setEuropa(true);
+                  setMoon(false);
+                  setMars(false);
                 }}
               >
                 {" "}
@@ -201,14 +217,18 @@ const DestinationContent = () => {
               <Button
                 colorScheme="teal"
                 variant="gost"
-                id="planets"
+                id={titan ? "planets" : ""}
                 ml={15}
                 letterSpacing={1}
                 fontSize={"16px"}
                 color={"bluey"}
-                fontFamily={"BarlowCondensed"}
+                style={{ fontFamily: "BarlowCondensed" }}
                 onClick={(e) => {
                   setPlanet("Titan");
+                  setTitan(true);
+                  setEuropa(false);
+                  setMoon(false);
+                  setMars(false);
                 }}
               >
                 Titan

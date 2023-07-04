@@ -5,13 +5,17 @@ const CrewDetails = (props) => {
   const { details } = props;
   return (
     <div>
-      <Box w={["100%", "90%"]} mt={[10, 20]} p={[4, 0]}>
-        <Heading fontSize="32px" textAlign={["center", "start"]} opacity={0.6}>
+      <Box w={["100%", "90%"]} mt={[5, 20]} p={[4, 0]} mb={[2, 0]}>
+        <Heading
+          fontSize={["20px", "32px"]}
+          textAlign={["center", "start"]}
+          opacity={0.6}
+        >
           {details.role}
         </Heading>
         <Heading
           fontFamily={"heading"}
-          fontSize="56px"
+          fontSize={["32px", "45px"]}
           mb={15}
           textAlign={["center", "start"]}
         >

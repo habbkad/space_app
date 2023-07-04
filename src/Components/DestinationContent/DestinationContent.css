@@ -2,10 +2,18 @@
   display: flex;
   flex-direction: row;
 }
-
-#planets:focus {
+.moon {
   border-bottom-width: 2px;
-
+  border-color: aliceblue;
+  border-radius: 0px;
+}
+.moon:focus {
+  border-bottom-width: 2px;
+  border-color: none;
+  border-radius: 0px;
+}
+#planets {
+  border-bottom-width: 2px;
   border-color: aliceblue;
   border-radius: 0px;
 }

@@ -29,7 +29,6 @@ export default function ServerSecondaryOptions() {
 
   return (
     <Box>
-      {" "}
       <IconButton
         aria-label="More server options"
         icon={<MdDensityMedium />}
@@ -54,20 +53,79 @@ export default function ServerSecondaryOptions() {
           <DrawerCloseButton color={"milky"} />
 
           <DrawerBody>
-            <Flex>
-              <Text fontWeight={"bold"} mr={2} color={"milky"}>
+            <Flex
+              mt={"100PX"}
+              onClick={(e) => {
+                navigate("/");
+              }}
+            >
+              <Text
+                fontWeight={"bold"}
+                style={{ fontFamily: "BarlowCondensed" }}
+                mr={2}
+                color={"milky"}
+              >
                 00
               </Text>{" "}
-              <Text color={"milky"}>Home</Text>{" "}
+              <Text color={"milky"} style={{ fontFamily: "BarlowCondensed" }}>
+                HOME
+              </Text>{" "}
+            </Flex>
+            <Flex
+              mt={10}
+              onClick={(e) => {
+                navigate("/destination");
+              }}
+            >
+              <Text
+                fontWeight={"bold"}
+                style={{ fontFamily: "BarlowCondensed" }}
+                mr={2}
+                color={"milky"}
+              >
+                01
+              </Text>{" "}
+              <Text color={"milky"} style={{ fontFamily: "BarlowCondensed" }}>
+                DESTINATION
+              </Text>{" "}
+            </Flex>
+            <Flex
+              mt={10}
+              onClick={(e) => {
+                navigate("/crew");
+              }}
+            >
+              <Text
+                fontWeight={"bold"}
+                style={{ fontFamily: "BarlowCondensed" }}
+                mr={2}
+                color={"milky"}
+              >
+                02
+              </Text>{" "}
+              <Text color={"milky"} style={{ fontFamily: "BarlowCondensed" }}>
+                CREW
+              </Text>{" "}
+            </Flex>
+            <Flex
+              mt={10}
+              onClick={(e) => {
+                navigate("/technology");
+              }}
+            >
+              <Text
+                fontWeight={"bold"}
+                mr={2}
+                color={"milky"}
+                style={{ fontFamily: "BarlowCondensed" }}
+              >
+                03
+              </Text>{" "}
+              <Text color={"milky"} style={{ fontFamily: "BarlowCondensed" }}>
+                TECHNOLOGY
+              </Text>{" "}
             </Flex>
           </DrawerBody>
-
-          <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={onClose}>
-              Cancel
-            </Button>
-            <Button colorScheme="blue">Save</Button>
-          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </Box>

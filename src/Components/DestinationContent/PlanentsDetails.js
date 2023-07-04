@@ -5,13 +5,17 @@ const PlanentsDetails = (props) => {
   let details = props.details;
   return (
     <div>
-      <Box w={500}>
-        <Heading fontSize={"150px"} align={["center", "normal"]}>
+      <Box w={["95%", 450]}>
+        <Heading
+          fontSize={["130px", "150px"]}
+          textAlign={["center", "normal"]}
+          style={{ fontFamily: "Bellefair" }}
+        >
           {props.planet}
         </Heading>
-        <Text>{details.description}</Text>
+        <Text align={"center"}>{details.description}</Text>
         <Box
-          w={["100%", 400]}
+          w={["95%", 400]}
           backgroundColor={"rgba(251, 245, 245, 0.421)"}
           h={0.2}
           mt={20}
@@ -30,7 +34,7 @@ const PlanentsDetails = (props) => {
           <Text fontSize={"14px"} align={["center", "normal"]} color={"bluey"}>
             EST. TRAVEL TIME{" "}
           </Text>
-          <Heading fontSize={"28px "} fontWeight={"thin"}>
+          <Heading fontSize={"28px "} fontWeight={"thin"} textAlign={"center"}>
             {details.travel}
           </Heading>
         </Box>

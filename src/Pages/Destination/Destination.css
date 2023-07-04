@@ -7,7 +7,7 @@
 @media only screen and (max-width: 600px) {
   .container_destination {
     background-image: url("./assets/destination/background-destination-mobile.jpg");
-    height: 160vh;
+    height: 170vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;

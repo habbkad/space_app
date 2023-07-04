@@ -15,7 +15,7 @@ const CrewPictures = ({ pic }) => {
             <Image
               src={pic}
               alt="Dan Abramov"
-              boxSize={["440px", "550px"]}
+              boxSize={["420px", "550px"]}
               objectFit={["contain"]}
             />
           </Box>

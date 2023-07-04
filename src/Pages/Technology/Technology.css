@@ -8,7 +8,7 @@
 @media only screen and (max-width: 600px) {
   .container_technology {
     background-image: url("./assets/technology/background-technology-mobile.jpg");
-    height: 150vh;
+    height: 170vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;

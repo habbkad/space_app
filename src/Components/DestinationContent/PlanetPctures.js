@@ -4,12 +4,13 @@ const PlanetPctures = (props) => {
   //console.log(props.details);
   return (
     <div>
-      <Flex>
+      <Flex justify={["center", "normal"]}>
         <Text
           color={"white"}
           letterSpacing={"3px"}
           mt={15}
-          fontSize={["16px", "28px"]}
+          style={{ fontFamily: "BarlowCondensed" }}
+          fontSize={["28px"]}
           opacity={0.6}
           mr={2}
         >
@@ -18,7 +19,8 @@ const PlanetPctures = (props) => {
         <Text
           color={"milky"}
           mt={15}
-          fontSize={["16px", "28px"]}
+          fontSize={["28px"]}
+          style={{ fontFamily: "BarlowCondensed" }}
           letterSpacing={"3px"}
         >
           PICK YOUR DESTINATION

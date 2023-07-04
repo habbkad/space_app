@@ -6,6 +6,10 @@
   font-family: "BarlowCondensed";
   src: url("./fonts/BarlowCondensed-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Bellefair";
+  src: url("./fonts/Bellefair-Regular.ttf") format("truetype");
+}
 
 body {
   margin: 0;

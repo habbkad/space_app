@@ -22,17 +22,20 @@ const Navbar = (props) => {
     <div>
       {" "}
       <Flex
-        justify={"end"}
+        justify={"space-between"}
+        align={"center"}
         className="mobileNav"
         visibility={["visible", "hidden"]}
       >
+        {" "}
+        <Image src={logo} width="110px" height={"50px"} pr={10} pl={5} mt={4} />
         <Box ml={2}>
           {" "}
           <NavbarMobile />
         </Box>
       </Flex>
       <div className="navBar_Con">
-        <Image src={logo} width="110px" height={"50px"} pr={10} pl={5} mt={4} />
+        <Image src={logo} width="140px" height={"70px"} pr={10} pl={5} mt={2} />
         <Box
           mt={"41px"}
           w="40%"
