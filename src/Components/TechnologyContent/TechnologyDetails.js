@@ -5,6 +5,7 @@ const TechnologyDetails = (props) => {
   const [vehicle, setVehicle] = useState("Toyota");
 
   const active = props.active;
+
   const changeVehicle = (type) => {
     setVehicle(type);
     props.changeVehicleType(type);
@@ -15,12 +16,13 @@ const TechnologyDetails = (props) => {
       return (
         <Box>
           <Heading
-            fontSize={"56px"}
+            fontSize={["28px", "38px"]}
             textAlign={["center", "start"]}
             fontWeight={"normal"}
+            style={{ fontFamily: "Bellefair" }}
             mb={10}
           >
-            Launch vehicle
+            LAUNCH VEHICLE
           </Heading>
           <Text textAlign={["center", "start"]}>
             A launch vehicle or carrier rocket is a rocket-propelled vehicle
@@ -35,12 +37,13 @@ const TechnologyDetails = (props) => {
       return (
         <Box>
           <Heading
-            fontSize={"56px"}
+            fontSize={["28px", "38px"]}
             textAlign={["center", "start"]}
             fontWeight={"normal"}
+            style={{ fontFamily: "Bellefair" }}
             mb={10}
           >
-            Spaceport
+            SPACEPORT
           </Heading>
           <Text textAlign={["center", "start"]}>
             A spaceport or cosmodrome is a site for launching (or receiving)
@@ -55,12 +58,13 @@ const TechnologyDetails = (props) => {
       return (
         <Box>
           <Heading
-            fontSize={"56px"}
+            fontSize={["28px", "38px"]}
             textAlign={["center", "start"]}
             fontWeight={"normal"}
+            style={{ fontFamily: "Bellefair" }}
             mb={10}
           >
-            Space capsule
+            SPACE CAPSULE
           </Heading>
           <Text textAlign={["center", "start"]}>
             A space capsule is an often-crewed spacecraft that uses a blunt-body
@@ -95,12 +99,14 @@ const TechnologyDetails = (props) => {
             />
             <br />
             <CustomButton
+              active={active}
               number={2}
               details={"Rocket"}
               changeVehicle={changeVehicle}
             />
             <br />
             <CustomButton
+              active={active}
               number={3}
               details={"Nav"}
               changeVehicle={changeVehicle}
@@ -113,8 +119,9 @@ const TechnologyDetails = (props) => {
               textAlign={["center", "start"]}
               fontSize={"16px"}
               style={{ fontFamily: "BarlowCondensed" }}
+              mb={[2, 4]}
             >
-              THE TECHNOLOGY
+              THE TECHNOLOGY...
             </Text>
 
             {channgeDetails(vehicle)}
